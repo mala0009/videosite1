@@ -1,0 +1,179 @@
+/******* Reset *********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: right;
+  /*box-sizing: border-box; er en CSS-egenskab, der bestemmer, hvordan bredden og højden af et element beregnes og påvirker elementets dimensioner i forhold til dens indhold, padding og grænser (borders).
+ Når du bruger box-sizing: border-box;, fortæller du browseren at inkludere padding og border i elementets samlede bredde og højde. Dette betyder, at når du angiver størrelsen på et element (f.eks. width: 300px;), vil elementets samlede bredde inkludere padding og border, hvilket resulterer i, at indholdet vil fylde det tilgængelige rum inden for disse grænser.
+
+Standardindstillingen for box-sizing er content-box, hvor bredden og højden kun refererer til indholdet og ikke inkluderer padding og border. Dette kan nogle gange føre til uventede layoutproblemer, især når man arbejder med faste størrelser og padding/border. 
+*/
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner med samme bredde */
+  grid-template-rows: auto; /* Automatisk højde */
+  gap: 20px; /* Afstand mellem grid-elementer */
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.about {
+  grid-column: span 2; /* Spænder over to kolonner */
+}
+
+.passion {
+  /* Kan tilpasses efter behov, f.eks.: */
+  grid-column: 1; /* Tager den første kolonne */
+}
+
+.beginning {
+  /* Tilpasses efter behov, f.eks.: */
+  grid-column: 2; /* Tager den anden kolonne */
+}
+
+body {
+  font-family: "oranienbaum";
+  color: black;
+  font-size: 1.4rem;
+  background-color: #e3c6c4;
+  text-shadow: 0px 0px 0px;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+header nav ul {
+  padding: 1rem 2rem;
+  padding-left: 1rem;
+}
+header nav ul,
+header nav {
+  display: flex;
+  position: static;
+  list-style: none;
+  padding-bottom: 0.1rem;
+  overflow-x: auto;
+  justify-content: flex-end; /* Ændret til 'flex-end' */
+  align-items: center; /* Tilføjet for at centrere lodret */
+}
+
+main {
+  margin: auto;
+}
+
+a {
+  font-weight: 50;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a:hover {
+  color: #ae6e69;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: right;
+  margin: 1%;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #e3c6c4;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.billedeggade {
+  margin: 45%;
+  margin-top: -21%;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  padding-top: 2%;
+}
+
+.youtube {
+  margin-top: 6%;
+  margin-left: 11%;
+}
+
+video {
+  margin-top: -39%;
+  margin-left: 54%;
+}
+
+.billedecom {
+  margin-top: 5%;
+  margin-left: 54%;
+}
+
+.baliguidebillede {
+  margin-top: -22%;
+  margin-left: 10%;
+}
+
+h2 {
+  margin-left: 17%;
+  margin-top: 30%;
+}
+.tekst {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-right: 70%;
+  font-size: 79%;
+  color: white;
+  margin-right: -2%;
+}
